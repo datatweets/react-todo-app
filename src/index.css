@@ -1,0 +1,71 @@
+:root {
+  /* --- Brand --- */
+  --accent: #6366f1;
+  --accent-hover: #4f46e5;
+  --accent-ring: rgba(99, 102, 241, 0.15);
+
+  /* --- Text --- */
+  --text-primary: #111827;
+  --text-muted: #9ca3af;
+
+  /* --- Surfaces --- */
+  --bg: #f9fafb;
+  --card-bg: #ffffff;
+  --input-bg: #ffffff;
+  --hover-bg: #f3f4f6;
+  --border: #e5e7eb;
+
+  /* --- Feedback --- */
+  --danger: #ef4444;
+  --danger-bg: rgba(239, 68, 68, 0.08);
+
+  /* --- Elevation --- */
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+
+  /* --- Typography --- */
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.5;
+  color-scheme: light dark;
+  color: var(--text-primary);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: #818cf8;
+    --accent-hover: #6366f1;
+    --accent-ring: rgba(129, 140, 248, 0.2);
+
+    --text-primary: #f9fafb;
+    --text-muted: #6b7280;
+
+    --bg: #0f172a;
+    --card-bg: #1e293b;
+    --input-bg: #1e293b;
+    --hover-bg: #334155;
+    --border: #334155;
+
+    --danger: #f87171;
+    --danger-bg: rgba(248, 113, 113, 0.1);
+
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+

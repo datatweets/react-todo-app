@@ -1,0 +1,30 @@
+.filterBar {
+  display: flex;
+  gap: 0.35rem;
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.btn,
+.btnActive {
+  padding: 0.3rem 0.85rem;
+  font-size: 0.875rem;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: none;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s, background-color 0.15s;
+  color: var(--text-muted);
+}
+
+.btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btnActive {
+  border-color: var(--accent);
+  color: var(--accent);
+  background-color: var(--accent-ring);
+  font-weight: 600;
+}
